@@ -153,6 +153,12 @@ async def meme(ctx):
 async def joke(ctx):
     await ctx.send(f"your a joke... ")
 
+
+@client.command()
+async def gom(ctx):
+    await ctx.send("@everyone ayo woooski soooxies anyone wooona hoopster onster to gom")
+
+
 @client.command()
 async def soos(ctx):
     await ctx.send(soosImage)
