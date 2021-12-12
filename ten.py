@@ -26,13 +26,13 @@ def generateMeme():
 
 generateMeme()
 
-def genMit():
-    path = r"./images/"
-    global random_filename
-    random_filename = random.choice([
-        x for x in os.listdir(path)
-        if os.path.isfile(os.path.join(path, x))
-    ])
+# def genMit():
+#     path = r"./images/"
+#     global random_filename
+#     random_filename = random.choice([
+#         x for x in os.listdir(path)
+#         if os.path.isfile(os.path.join(path, x))
+#     ])
 
 
 def generateAlienName(aliens):
@@ -135,13 +135,13 @@ async def unmute(ctx, member: discord.Member):
     await member.send(f"you got unzoinked in the server, come speak again >> {ctx.guild.name}")
 
 # random iamges of mit
-@client.command()
-@commands.has_permissions(kick_members=True)
-async def mit(ctx):
-    genMit()
-    await ctx.send(file=discord.File(f"./images/{random_filename}"))
-    randomOutput = random.choice(randomWords)
-    await ctx.send(randomOutput)
+# @client.command()
+# @commands.has_permissions(kick_members=True)
+# async def mit(ctx):
+#     genMit()
+#     await ctx.send(file=discord.File(f"./images/{random_filename}"))
+#     randomOutput = random.choice(randomWords)
+#     await ctx.send(randomOutput)
 
 @client.command()
 async def meme(ctx):
